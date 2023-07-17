@@ -63,7 +63,7 @@
         text-align: center;
 
         input{
-          widows: 100%;
+          width: 100%;
         }
       }
       button{
@@ -73,6 +73,43 @@
     }
   }
 
+}
+@media (max-width: 340px) {
+  .containerSugerencias {
+  margin: 8rem 3rem 0rem 3rem;
+  &__title {
+    @include titles();
+    text-shadow: 2px 2px 3px gray;
+  }
+  .sugerencias {
+    display: flex;
+    place-content: center;  
+    font-size: 1.2em;
+    @include titles();
+    
+    .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .form-group{
+        padding: 2rem;
+        text-align: center;
+
+        input{
+          width: 100%;
+        }
+        textarea{
+          width: 100%;
+        }
+      }
+      button{
+        color: aliceblue;
+        background: linear-gradient(#010b4f, #000d63, #001499, #020b46, #000000);
+      }
+    }
+  }
+
+}
 }
 
 </style>
