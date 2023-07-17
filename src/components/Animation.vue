@@ -74,7 +74,7 @@ onMounted(() => {
   .animation-container {
 
     .animation {
-      width: 100%;
+      width: 80%;
     }
 
   }

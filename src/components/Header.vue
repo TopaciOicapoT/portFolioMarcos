@@ -7,21 +7,25 @@
 
     <section>
       <h2>WELCOME TO MY PORTFOLIO</h2>
-      <div style="display: flex; max-width: 500px;">
-          <p style="font-size: small">
-            Lover of <strong style="color: rgb(149, 0, 255);">video games</strong>, <strong style="color: rgb(8, 45, 194);">programming</strong>, <strong style="color: rgb(196, 8, 8);">sports</strong>, <strong style="color: rgb(43, 182, 8);">animals</strong> and <strong style="color: goldenrod;">Warhammer 40K</strong>. In this
-            portfolio, I showcase a part of my personality and my qualities as a
-            developer. I hope you like it.
-          </p>
-
+      <div style="display: flex; max-width: 500px">
+        <p style="font-size: small">
+          Lover of <strong style="color: rgb(149, 0, 255)">video games</strong>,
+          <strong style="color: rgb(8, 45, 194)">programming</strong>,
+          <strong style="color: rgb(196, 8, 8)">sports</strong>,
+          <strong style="color: rgb(43, 182, 8)">animals</strong> and
+          <strong style="color: goldenrod">Warhammer 40K</strong>. In this
+          portfolio, I showcase a part of my personality and my qualities as a
+          developer. I hope you like it.
+        </p>
       </div>
     </section>
+    <Contact style="margin-top: 50px;"/>
   </header>
 </template>
 
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
-
+import Contact from "./Contact.vue";
 const visible = ref(false);
 const targetElement = ref(null);
 onMounted(() => {
@@ -44,7 +48,7 @@ onMounted(() => {
   display: grid;
   place-content: center;
   color: bisque;
-    padding: 0rem 3rem 0rem 3rem;
+  padding: 0rem 3rem 0rem 3rem;
   height: 500px;
   min-height: 600px;
   text-align: center;
@@ -59,12 +63,11 @@ onMounted(() => {
   h1 {
     color: bisque;
     font-size: xx-large;
-}
-h2{
+  }
+  h2 {
     margin-top: 3rem;
-      color: bisque;
-      font-size: large;
-
+    color: bisque;
+    font-size: large;
   }
 }
 
@@ -80,6 +83,4 @@ h2{
   opacity: 1;
   transform: translateX(0px);
 }
-
-
 </style>

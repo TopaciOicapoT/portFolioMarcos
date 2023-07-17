@@ -20,6 +20,8 @@ import { RouterView } from "vue-router";
 
 <style lang="scss" scoped>
 .antLayout{
+    padding-bottom: 10rem;
+    min-height: 100vh;
     background: radial-gradient(circle,#010b4f, #010628, #000000,#000000, #000000) ;
     &{
     

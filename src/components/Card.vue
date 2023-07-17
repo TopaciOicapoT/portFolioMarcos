@@ -86,8 +86,10 @@ onMounted(() => {
     text-align: center;
     text-shadow: 2px 4px 2px #364d79;
     font-size: 20px;
+    text-decoration: underline;
     transition: all 500ms;
     &:hover{
+    
       animation: shake 500ms linear;
     }
   }

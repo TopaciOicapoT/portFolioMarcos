@@ -16,8 +16,10 @@
       mode="horizontal"
       :style="{ lineHeight: '64px', background: 'transparent' }"
     >
-      <a-menu-item v-if="!homeView" :style="{background: 'gray', borderRadius: '5%'}" key="1"
+      <a-menu-item v-if="homeView" :style="{ background: 'linear-gradient(#010b4f, #000d63, #001499, #020b46, #000000)', borderRadius: '5%'}" key="1"
         ><RouterLink to="/">Home</RouterLink></a-menu-item>
+      <a-menu-item v-if="formView" :style="{ background: 'linear-gradient(#010b4f, #000d63, #001499, #020b46, #000000)', borderRadius: '5%'}" key="2"
+        ><RouterLink to="/form">Contact</RouterLink></a-menu-item>
 
     </a-menu>
   </a-layout-header>
@@ -28,7 +30,8 @@ import { RouterLink, useRoute } from "vue-router";
 import { computed, onMounted, ref, watch } from "vue";
 
 const selectedKeys = ref([1]);
-const homeView = ref(true)
+const homeView = ref(false)
+const formView = ref(true)
 const route = useRoute();
 watch(
   () => route.path,
@@ -36,10 +39,13 @@ watch(
     if (newPath === "/") {
       selectedKeys.value = ["1"];
       homeView.value = false
+      formView.value = true
     }
-    // else if (newPath === "/wod") {
-      //   selectedKeys.value = ["2"];
-      // }
+    else if (newPath === "/form") {
+      selectedKeys.value = ["2"];
+      formView.value = false
+      homeView.value = true
+      }
     }
     );
     
@@ -50,12 +56,15 @@ watch(
           if (newPath === "/") {
             selectedKeys.value = ["1"];
             homeView.value = false
-      }
-      // else if (newPath === "/wod") {
-      //   selectedKeys.value = ["2"];
-      // }
-    }
-  );
+            formView.value = true
+          }
+          else if (newPath === "/form") {
+            selectedKeys.value = ["2"];
+            formView.value = false
+            homeView.value = true
+            }
+          }
+          );
 });
 </script>
 
