@@ -67,6 +67,7 @@ onMounted(() => {
   display: grid;
   place-items: center;
   word-break: balance;
+  text-align: center;
   padding: 2rem;
   color: aliceblue !important;
 }

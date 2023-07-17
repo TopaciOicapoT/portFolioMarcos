@@ -52,14 +52,15 @@ onMounted(() => {
   height: 500px;
   min-height: 600px;
   text-align: center;
-  background: radial-gradient(
-    circle,
-    #010b4f,
-    #000000,
-    #000000,
-    #000000,
-    #000000
-  );
+  // background: radial-gradient(
+  //   circle,
+  //   #010b4f,
+  //   #000000,
+  //   #000000,
+  //   #000000,
+  //   #000000
+  // );
+  background: transparent;
   h1 {
     color: bisque;
     font-size: xx-large;

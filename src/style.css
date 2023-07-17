@@ -1,8 +1,7 @@
-/* :root {
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-
-
+  
+  
   color: rgba(255, 255, 255, 0.87);
   background: radial-gradient(circle,#553800, #1b1100, #000000,#000000, #000000);
   font-synthesis: none;
@@ -14,13 +13,13 @@
 
 
 body {
-  background: radial-gradient(blue);
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 150vh;
+  * {
+    line-height: 1.5;
+    font-family: Roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 1000;
+  }
 }
+/*
 
 h1 {
   font-size: 3.2em;

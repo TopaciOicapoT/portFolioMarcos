@@ -22,28 +22,8 @@ import { RouterView } from "vue-router";
 .antLayout{
     padding-bottom: 10rem;
     min-height: 100vh;
-    background: radial-gradient(circle,#010b4f, #010628, #000000,#000000, #000000) ;
-    &{
-    
-        animation: blink 8s infinite;
-    }
+    background: radial-gradient(circle,#010f68, #020a3d, #010628,#000000, #000000) ;
+
 }
-@keyframes blink{
-    0%{
-        background: radial-gradient(circle,#02106e, #010628, #000000,#000000, #000000) ;
-    }
-    25%{
-        background: radial-gradient(circle,#01106e, #010628, #000000,#000000, #000000) ;
-    }
-    50%{
-        background: radial-gradient(circle,#00106e, #010628, #000000,#000000, #000000) ;
-    }
-    75%{
-        background: radial-gradient(circle,#01106e, #010628, #000000,#000000, #000000) ;
-    }
-    100%{
-        background: radial-gradient(circle,#02106e, #010628, #000000,#000000, #000000) ;
-    }
-    
-}
+
 </style>

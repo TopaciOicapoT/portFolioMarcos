@@ -1,72 +1,78 @@
 <template>
 
-    <a-form
-    action="https://formsubmit.co/molinamartinmarcos@gmail.com" method="POST"
-    class="form"
-    :validate-messages="validateMessages"
-    >
-    <h1>Contact me and I will respond to you right away.:</h1>
-    <a-form-item
-      :name="['user', 'name']"
-      label="Name"
-      form="name"
-      :rules="[{ required: false }]"
-    >
-      <a-input type="text" name="name" />
-    </a-form-item>
-    <a-form-item
-      :name="['user', 'email']"
-      label="Email"
-      :rules="[{ type: 'email' }]"
-      from="email"
-    >
-      <a-input type="email" name="email"/>
-    </a-form-item>
-    <a-form-item form="message" :name="['user', 'introduction']" label="Message">
-      <a-textarea type="text" name="message"/>
-    </a-form-item>
-    <a-form-item :wrapper-col="{ ...layout.wrapperCol, offset: 8 }">
-      <a-button type="primary" html-type="submit">Submit</a-button>
-    </a-form-item>
-  </a-form>
+<section class="containerSugerencias">
+    <h2 class="containerSugerencias__title">Contact me</h2>
+    <div id="sugerencias" class=" sugerencias">
+      <form id="suggestion-form" class="form" action="https://formsubmit.co/molinamartinmarcos@gmail.com" method="POST">
+        <div class="form-group">
+          <label class="pb-2" for="name">Name: </label>
+          <input type="text" class="form-control" id="name" name="name" required />
+        </div>
+        <div class="form-group ">
+          <label class="pb-2" for="email" type="email" name="email">Email: </label>
+          <input type="email" class="form-control" id="email" name="email" required />
+        </div>
+        <div class="form-group ">
+          <label class="pb-2" for="mesagge" type="text" name="mesagge">Message: </label>
+          <textarea class="form-control" id="suggestion" name="mesagge" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
 </template>
 <script setup>
-import { reactive } from "vue";
 
-const layout = {
-  labelCol: {
-    span: 8,
-  },
-  wrapperCol: {
-    span: 16,
-  },
-};
 
-const validateMessages = {
-  required: "${label} is required!",
-  types: {
-    email: "${label} is not a valid email!",
-    number: "${label} is not a valid number!",
-  },
-  number: {
-    range: "${label} must be between ${min} and ${max}",
-  },
-};
+
 
 </script>
 
 <style scoped lang="scss">
-
-.form{
-    // width: 100%;
-    box-shadow: 3px 3px 3px 3px black inset;
-    padding: 35px;
-    margin: 5rem;
-    margin-top: 10rem;
-    background-color: aliceblue;
-    h1{
-        text-align: center;
-        text-decoration: underline;
-    }
+@mixin titles() {
+  margin: 30px;
+  padding: 1rem;
+  border: 2px solid rgb(137, 134, 134);
+  box-shadow: 0px 1px 2px rgb(141, 137, 137), 1px 2px 3px rgb(204, 193, 193),
+    1px 1px 4px rgb(159, 159, 159), 0px 0px 5px rgb(65, 64, 64) inset;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
+
+
+.containerSugerencias {
+  margin: 8rem 3rem 0rem 3rem;
+  &__title {
+    @include titles();
+    text-shadow: 2px 2px 3px gray;
+  }
+  .sugerencias {
+    display: flex;
+    place-content: center;  
+    font-size: 1.2em;
+    @include titles();
+    
+    .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .form-group{
+        padding: 2rem;
+        text-align: center;
+
+        input{
+          widows: 100%;
+        }
+      }
+      button{
+        color: aliceblue;
+        background: linear-gradient(#010b4f, #000d63, #001499, #020b46, #000000);
+      }
+    }
+  }
+
+}
+
 </style>

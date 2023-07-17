@@ -17,9 +17,9 @@
       :style="{ lineHeight: '64px', background: 'transparent' }"
     >
       <a-menu-item v-if="homeView" :style="{ background: 'linear-gradient(#010b4f, #000d63, #001499, #020b46, #000000)', borderRadius: '5%'}" key="1"
-        ><RouterLink to="/">Home</RouterLink></a-menu-item>
-      <a-menu-item v-if="formView" :style="{ background: 'linear-gradient(#010b4f, #000d63, #001499, #020b46, #000000)', borderRadius: '5%'}" key="2"
-        ><RouterLink to="/form">Contact</RouterLink></a-menu-item>
+        ><RouterLink to="/">Back to portfolio</RouterLink></a-menu-item>
+      <!-- <a-menu-item v-if="formView" :style="{ background: 'linear-gradient(#010b4f, #000d63, #001499, #020b46, #000000)', borderRadius: '5%'}" key="2"
+        ><RouterLink to="/form">Contact</RouterLink></a-menu-item> -->
 
     </a-menu>
   </a-layout-header>
