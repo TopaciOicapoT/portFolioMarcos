@@ -35,6 +35,7 @@
   border-radius: 5px;
   text-align: center;
   color: rgb(0, 0, 0);
+  font-family: Roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background: rgb(255, 255, 255);
 }
 

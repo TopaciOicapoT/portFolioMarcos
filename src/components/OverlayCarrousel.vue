@@ -2,7 +2,7 @@
   <div class="overlay">
     <div v-for="(imgItem, index) in landPageTools" :key="index">
       <img
-        style="width: 60%; height: 50%; margin: 1rem"
+        style="width: 60%; height: 30px; margin: 1rem"
         :src="imgItem"
         alt=""
       />
@@ -19,8 +19,10 @@ defineProps({
 <style lang="scss" scoped>
 .overlay {
   display: flex;
+  flex-wrap:wrap;
   position: absolute;
   justify-content: space-evenly;
+  
   top: 0;
   bottom: 0;
   color: aliceblue;

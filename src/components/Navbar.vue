@@ -38,43 +38,44 @@
 </template>
 
 <script setup>
-import { RouterLink, useRoute } from "vue-router";
+import { RouterLink, onBeforeRouteLeave, onBeforeRouteUpdate, useRoute } from "vue-router";
 import { computed, onMounted, ref, watch } from "vue";
 
 const selectedKeys = ref([1]);
 const homeView = ref(false);
-const formView = ref(true);
+const viewFalse = ()=>{
+  homeView.value= true
+}
 const route = useRoute();
-watch(
-  () => route.path,
-  (newPath) => {
-    if (newPath === "/") {
-      selectedKeys.value = ["1"];
-      homeView.value = false;
-      formView.value = true;
-    } else if (newPath === "/form") {
-      selectedKeys.value = ["2"];
-      formView.value = false;
-      homeView.value = true;
-    }
-  }
-);
 
-onMounted(() => {
-  watch(
+watch(
     () => route.path,
     (newPath) => {
       if (newPath === "/") {
         selectedKeys.value = ["1"];
         homeView.value = false;
-        formView.value = true;
-      } else if (newPath === "/form") {
+      } else if (newPath !== "/") {
         selectedKeys.value = ["2"];
-        formView.value = false;
         homeView.value = true;
       }
     }
   );
+
+onMounted(() => {
+   
+    watch(
+      () => route.path,
+      (newPath) => {
+        if (newPath === "/") {
+          selectedKeys.value = ["1"];
+          homeView.value = false;
+        } else if (newPath !== "/") {
+          selectedKeys.value = ["2"];
+          homeView.value = true;
+        }
+      }
+    );
+
 });
 </script>
 

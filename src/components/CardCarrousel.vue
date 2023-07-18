@@ -26,14 +26,26 @@
             ><img src="/landPageDemoGif.gif" alt=""
           /></a>
         </div>
+        <div>
+          <OverlayCarrousel :landPageTools="['VUE.png','JavaScript.png','HTML.png','CSS.png','sass.png','nodeJs.png','fireBase.png','antDesing.png',]">
+          
+          </OverlayCarrousel>
+          <img style="width: 150px; height: 150px;" src="workInProgres.png" alt="">
+          <RouterLink to="/workinprogress">
+            <img src="/dreamTeamDemoGif.gif" alt=""/>
+          </RouterLink>
+        </div>
       </a-carousel>
     </div>
   </div>
+  <!-- <a target="_blank" href="https://dream-team-moto-gp.netlify.app/">
+</a> -->
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import OverlayCarrousel from "./OverlayCarrousel.vue";
+import { RouterLink } from "vue-router";
 
 const Props = defineProps({
   Title: String,

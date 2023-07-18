@@ -16,6 +16,11 @@ const router = createRouter({
         name: 'form',
         component: () => import('../views/FormContact.vue')
       },
+      {
+        path: '/workinprogress',
+        name: 'workinprogress',
+        component: () => import('../views/WokInProgres.vue')
+      },
 
     ]
   })
