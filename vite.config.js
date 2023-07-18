@@ -18,11 +18,11 @@ export default defineConfig({
       }
     }
   },
-  build: {
-    rollupOptions: {
-      external: ['workInProgres.png'] // Agrega aquí el nombre del archivo que deseas externalizar
-    }
-  }
+  // build: {
+  //   rollupOptions: {
+  //     external: ['workInProgres.png'] // Agrega aquí el nombre del archivo que deseas externalizar
+  //   }
+  // }
 
 
 

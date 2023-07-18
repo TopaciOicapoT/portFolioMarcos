@@ -9,7 +9,7 @@
     </a>
     <a-card class="card" hoverable>
       <template #cover>
-        <img alt="example" src="workInProgres.png" />
+        <!-- <img alt="example" src="../../node_modules/workInProgres.png" /> -->
       </template>
       <a-card-meta
         class="card-description"

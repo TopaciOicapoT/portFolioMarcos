@@ -30,7 +30,7 @@
           <OverlayCarrousel :landPageTools="['VUE.png','JavaScript.png','HTML.png','CSS.png','sass.png','nodeJs.png','fireBase.png','antDesing.png',]">
           
           </OverlayCarrousel>
-          <img style="width: 150px; height: 150px;" src="workInProgres.png" alt="">
+          <!-- <img style="width: 150px; height: 150px;" src="workInProgres.png" alt=""> -->
           <RouterLink to="/workinprogress">
             <img src="/dreamTeamDemoGif.gif" alt=""/>
           </RouterLink>
