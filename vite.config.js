@@ -17,6 +17,15 @@ export default defineConfig({
         implementation: sass
       }
     }
+  },
+  build: {
+    rollupOptions: {
+      external: ['workInProgres.png'] // Agrega aquí el nombre del archivo que deseas externalizar
+    }
   }
+
+
+
+
 })
 
