@@ -16,14 +16,14 @@
           <a
             target="_blank"
             href="https://spartan-functional-training.netlify.app/"
-            ><img src="/CapturaSpartan.png" alt=""
+            ><img src="/spartanLandPageGif.gif" alt=""
           /></a>
         </div>
         <div>
           <OverlayCarrousel :landPageTools="['HTML.png','CSS.png']"/>
 
           <a target="_blank" href="https://land-page-marcos-molina.netlify.app/"
-            ><img src="/landPageDemo.gif" alt=""
+            ><img src="/landPageDemoGif.gif" alt=""
           /></a>
         </div>
       </a-carousel>
@@ -127,7 +127,7 @@ onMounted(() => {
     place-items: center;
     h1 {
       text-align: center;
-      font-size: 14px;
+      font-size: 16px;
     }
     .contain {
       width: 320px;

@@ -175,7 +175,7 @@ onMounted(() => {
     place-items: center;
     h1 {
       text-align: center;
-      font-size: 14px;
+      font-size: 16px;
     }
     .contain {
       .card {

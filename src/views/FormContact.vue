@@ -2,19 +2,19 @@
 
 <section class="containerSugerencias">
     <h2 class="containerSugerencias__title">Contact me</h2>
-    <div id="sugerencias" class=" sugerencias">
-      <form id="suggestion-form" class="form" action="https://formsubmit.co/molinamartinmarcos@gmail.com" method="POST">
+    <div class=" sugerencias">
+      <form class="form" action="https://formsubmit.co/molinamartinmarcos@gmail.com" method="POST">
         <div class="form-group">
-          <label class="pb-2" for="name">Name: </label>
+          <label  for="name">Name: </label>
           <input type="text" class="form-control" id="name" name="name" required />
         </div>
         <div class="form-group ">
-          <label class="pb-2" for="email" type="email" name="email">Email: </label>
+          <label for="email" type="email" name="email">Email: </label>
           <input type="email" class="form-control" id="email" name="email" required />
         </div>
         <div class="form-group ">
-          <label class="pb-2" for="mesagge" type="text" name="mesagge">Message: </label>
-          <textarea class="form-control" id="suggestion" name="mesagge" rows="3" required></textarea>
+          <label for="message" type="text" name="mesagge">Message: </label>
+          <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
         </div>
         <button type="submit" class="btn">Enviar</button>
       </form>
@@ -22,9 +22,6 @@
   </section>
 </template>
 <script setup>
-
-
-
 
 </script>
 

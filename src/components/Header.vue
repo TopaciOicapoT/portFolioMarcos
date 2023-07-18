@@ -6,7 +6,7 @@
     <span ref="targetElement">Web Developer</span>
 
     <section>
-      <h2>WELCOME TO MY PORTFOLIO</h2>
+      <h2>WELCOME TO MY WEB</h2>
       <div style="display: flex; max-width: 500px">
         <p style="font-size: small">
           Lover of <strong style="color: rgb(149, 0, 255)">video games</strong>,

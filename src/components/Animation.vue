@@ -70,6 +70,7 @@ onMounted(() => {
   text-align: center;
   padding: 2rem;
   color: aliceblue !important;
+  font-size: 18px;
 }
 @media (max-width: 450px) {
   .animation-container {
@@ -80,8 +81,15 @@ onMounted(() => {
 
   }
 
-
   
+}
+
+@media (max-width: 600px) {
+  .textD{
+    font-size: 12px;
+  }
+
+
 }
 
 .fade-enter-from {
