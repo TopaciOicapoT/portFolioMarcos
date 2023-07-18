@@ -9,7 +9,7 @@
         >
           <img class="listItem" src="/linkedin.png" alt="" />
         </a>
-        <a href="https://github.com/" target="_blank" class="anchor">
+        <a href="https://github.com/TopaciOicapoT/portFolioMarcos.git" target="_blank" class="anchor">
           <img class="listItem" src="/gitHub.png" alt="" />
         </a>
         <RouterLink to="/form" class="anchor">
