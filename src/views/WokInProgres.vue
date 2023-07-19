@@ -1,4 +1,7 @@
 <template>
+  <div class="back">
+    <BackButton></BackButton>
+  </div>
   <section class="content">
     <a
       class="anchor"
@@ -9,7 +12,7 @@
     </a>
     <a-card class="card" hoverable>
       <template #cover>
-        <!-- <img alt="example" src="../../node_modules/workInProgres.png" /> -->
+        <img alt="example" src="/workInProgres.png" />
       </template>
       <a-card-meta
         class="card-description"
@@ -20,11 +23,12 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import BackButton from "../components/BackButton.vue";
+</script>
 
 <style lang="scss" scoped>
 @mixin titles() {
-  margin: 30px;
   padding: 1rem;
   border: 2px solid rgb(137, 134, 134);
   box-shadow: 0px 1px 2px rgb(141, 137, 137), 1px 2px 3px rgb(204, 193, 193),
@@ -35,26 +39,38 @@
   background: rgb(255, 255, 255);
 }
 
+.back {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  padding-bottom: 0;
+}
 .anchor {
   @include titles();
   font-family: Roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  transition: all 500ms;
-  &:hover{
-    transform: scale(1.2);
+  transform: scale(0.9);
+  font-size: 22px;
+  transition: all 400ms;
+  &:hover {
+    transform: scale(1);
   }
 }
 
 .content {
-  margin-top: 10rem;
+  margin-top: 2rem;
   display: grid;
   place-content: center;
-  padding: 2rem;
+  padding: 3rem;
 
   .card {
     display: grid;
     place-items: center;
-    border: none;
-    background-color: darkgoldenrod;
+    margin: 3rem;
+    border: 2px solid rgb(137, 134, 134);
+    box-shadow: 0px 1px 2px rgb(141, 137, 137), 1px 2px 3px rgb(204, 193, 193),
+      1px 1px 4px rgb(159, 159, 159), 0px 0px 5px rgb(65, 64, 64) inset;
+    border-radius: 15px;
+    background-color: yellow;
     text-align: center;
   }
 }

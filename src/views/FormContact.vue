@@ -1,6 +1,9 @@
 <template>
-
-<section class="containerSugerencias">
+  <div class="back">
+    <BackButton></BackButton>
+  </div>
+  
+  <section class="containerSugerencias">
     <h2 class="containerSugerencias__title">Contact me</h2>
     <div class=" sugerencias">
       <form class="form" action="https://formsubmit.co/molinamartinmarcos@gmail.com" method="POST">
@@ -22,6 +25,8 @@
   </section>
 </template>
 <script setup>
+import BackButton from '../components/BackButton.vue';
+
 
 </script>
 
@@ -39,9 +44,15 @@
   background: rgb(255, 255, 255);
 }
 
-
+.back{
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  padding-bottom: 0;
+}
 .containerSugerencias {
   margin: 8rem 3rem 0rem 3rem;
+  
   &__title {
     @include titles();
     text-shadow: 2px 2px 3px gray;

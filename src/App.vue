@@ -1,6 +1,4 @@
 <script setup>
-
-import Navbar from "./components/Navbar.vue";
 import { RouterView } from "vue-router";
 
 
@@ -9,9 +7,7 @@ import { RouterView } from "vue-router";
 
 <template>
  <a-layout class="antLayout">
-
-     <Navbar></Navbar>
-     
+    
      <section  class="container">
          <RouterView />
         </section>
