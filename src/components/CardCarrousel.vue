@@ -11,7 +11,7 @@
       <a-carousel class="slick-slide" autoplay>
         <div>
 
-          <OverlayCarrousel :landPageTools="['JavaScript.png','HTML.png','CSS.png','sass.png','boostrap.png']"/>
+          <OverlayCarrousel :landPageTools="['JavaScript.png','HTML.png','CSS.png','sass.png','bootstrap.png']"/>
 
           <a
             target="_blank"
@@ -24,6 +24,13 @@
 
           <a target="_blank" href="https://land-page-marcos-molina.netlify.app/"
             ><img src="/landPageDemoGif.gif" alt=""
+          /></a>
+        </div>
+        <div>
+          <OverlayCarrousel :landPageTools="['HTML.png','CSS.png','JavaScript.png', 'lit.svg']"/>
+
+          <a target="_blank" href="https://rick-and-morty-lit-api.netlify.app/"
+            ><img src="/RyckMortyApiGif.gif" alt=""
           /></a>
         </div>
         <div>
@@ -56,7 +63,7 @@ const spartanTools = [
   "HTML.png",
   "CSS.png",
   "sass.png",
-  "boostrap.png",
+  "bootstrap.png",
 ];
 const visible = ref(false);
 const targetElement = ref(null);

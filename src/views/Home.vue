@@ -4,7 +4,7 @@
   <Card
   Title="About Me"
   description="Enthusiastic, positive, and willing to explore new ideas and concepts. I have the most important thing, a desire to work and learn alongside a team with the same aspirations. I have been passionate about Warhammer 40K since I was 10 years old, and that's a lot of painted miniatures, so dedication to detail and patience are implicit in me. If you are looking for a determined and ambitious person, you just have to contact me."
-  :imgIncludeisible="false"
+  :imgInclude="false"
   />
   <LineAnimation/>
   <Animation
@@ -19,7 +19,7 @@
   <LineAnimation/>
   <Card
   Title="Languages and Tools"
-  description="JavaScript, HTML, CSS, VUE, TypeScript, Node.js, Sass preprocessor, Boostrap, Ant-Desing-Vue, FireBase"
+  description="JavaScript, HTML, CSS, VUE, TypeScript, Node.js, Sass preprocessor, Bootstrap, Ant-Desing-Vue, FireBase, Lit, docker, postgreSQL"
   :img="[
     'JavaScript.png',
     'HTML.png',
@@ -28,9 +28,12 @@
     'typeScript.png',
     'nodeJs.png',
     'sass.png',
-    'boostrap.png',
+    'bootstrap.png',
     'antDesing.png',
     'fireBase.png',
+    'lit.svg',
+    'docker.png',
+    'postgresql.png'
     
     
   ]"
